@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Camp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/ballcamp.png" alt="Basketball Logo">
+        </div>
+        <div class="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="camp.html">Camp</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('images/bcamp.jpg');">
+        <div class="hero-content">
+            <h2>Elevate Your Game</h2>
+            <a href="register.html" class="btn-register">Join Us Today!</a>
+        </div>
+    </section>
+
+    <!-- Training Camp Info Section -->
+    <section class="camp-info">
+        <h2>Discover Your Potential</h2>
+        <p>
+            Welcome to our basketball camp! Here, players of all ages and skill levels come together to learn, practice,
+            and grow in a fun and encouraging environment. Our dedicated coaches focus on developing each athlete's
+            skills through personalized training programs that cater to individual needs.
+        </p>
+        <p>
+            We offer a wide range of activities, from fundamental skill development to advanced game strategies. Whether
+            you’re a beginner eager to learn the basics or an experienced player looking to sharpen your skills, our
+            camp is designed for you.
+        </p>
+        <p>
+            Our coaching staff includes former players and experienced trainers who understand what it takes to succeed
+            in the sport. They will guide you through drills that enhance your technical skills, while also focusing on
+            teamwork and sportsmanship.
+        </p>
+        <p>
+            Join us for an unforgettable experience filled with hard work, camaraderie, and the love of the game. Get
+            ready to take your skills to the next level and make lasting memories on and off the court!
+        </p>
+    </section>
+
+    <!-- The Camp Section -->
+    <section class="camp-gallery">
+        <h2>Camp Highlights</h2>
+        <div class="gallery">
+            <figure>
+                <img src="images/CTS.jpg" alt="Camp Training Session">
+                <figcaption>Camp Training Session</figcaption>
+            </figure>
+            <figure>
+                <img src="images/TBA.jpg" alt="Team Building Activities">
+                <figcaption>Team Building Activities</figcaption>
+            </figure>
+            <figure>
+                <img src="images/SD.jpg" alt="Shooting Drills">
+                <figcaption>Shooting Drills</figcaption>
+            </figure>
+            <figure>
+                <img src="images/GDF.jpg" alt="Game Day Fun">
+                <figcaption>Game Day Fun</figcaption>
+            </figure>
+            <figure>
+                <img src="images/CP.jpg" alt="Coach and Players">
+                <figcaption>Coach and Players</figcaption>
+            </figure>
+            <figure>
+                <img src="images/TS.jpg" alt="Team Spirit">
+                <figcaption>Team Spirit</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <footer>
+        <a href="contact.html">
+            <p>&copy; 2024 Basketball Camp. All rights reserved.</p>
+        </a>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/fb.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/ig.jpg" alt="Instagram"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/twt.jpg" alt="Twitter"></a>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('nav ul');
+
+
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+
+        const menuItems = document.querySelectorAll('nav ul li a');
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Camp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/ballcamp.png" alt="Basketball Logo">
+        </div>
+        <div class="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="camp.html">Camp</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('images/shoot.jpg');">
+        <div class="hero-content">
+            <h2>BALL LIKE NEVER BEFORE</h2>
+
+        </div>
+    </section>
+
+    <!-- Training Camp Info Section -->
+    <section class="camp-info">
+        <h2>Welcome to Our Training Camp</h2>
+        <p>
+            Welcome to our training camp where passion for basketball meets expert training! We believe that every
+            player has the potential to achieve greatness. Our mission is to provide a dynamic, supportive, and
+            challenging environment where athletes of all skill levels can elevate their game, build confidence, and
+            develop a lifelong love for basketball.
+        </p>
+        <p>
+            Our vision is to be the leading destination for basketball development, fostering both technical skills and
+            personal growth. We strive to create a camp experience that is not only educational but also inspiring,
+            where players are encouraged to push their limits and reach their full potential.
+        </p>
+        <p>
+            Our camp offers a range of programs tailored to different age groups and skill levels. From fundamental
+            skills training and advanced tactical drills to strength conditioning and mental game strategies, our
+            comprehensive curriculum is designed to address every aspect of a player’s development. Our experienced
+            coaches bring a wealth of knowledge and a passion for the game, ensuring that each session is engaging and
+            impactful.
+        </p>
+        <p>
+            We are committed to creating a positive and inclusive atmosphere where every player feels valued and
+            motivated. Whether you’re just starting out or looking to refine your skills, Ball like never before is
+            dedicated to helping you achieve your goals and enjoy the game you love.
+        </p>
+        <p>
+            Join us and take the first step toward becoming the best player you can be. We can’t wait to see you on the
+            court!
+        </p>
+    </section>
+    <section class="additional-bg">
+    </section>
+
+    <!-- The Camp Section -->
+    <section class="camp-gallery">
+        <h2>The Camp</h2>
+        <div class="gallery">
+            <img src="images/hesi.jpg" alt="Camp Image 1">
+            <img src="images/stepback.jpg" alt="Camp Image 2">
+            <img src="images/shooting.jpg" alt="Camp Image 3">
+            <img src="images/dribbling.jpg" alt="Camp Image 4">
+            <img src="images/crossover.jpg" alt="Camp Image 5">
+            <img src="images/handles.jpg" alt="Camp Image 6">
+        </div>
+    </section>
+
+    <footer>
+        <a href="contact.html"><h2>Get in Touch with Us</h2></a>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/fb.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/ig.jpg" alt="Instagram"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/twt.jpg" alt="Twitter"></a>
+        </div>
+    </footer>
+    
+    <script>
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('nav ul');
+        
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        const menuItems = document.querySelectorAll('nav ul li a');
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

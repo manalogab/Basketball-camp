@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Basketball Camp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="contact-page"> 
+
+    <header>
+        <div class="logo">
+            <img src="images/ballcamp.png" alt="Basketball Logo">
+        </div>
+        <div class="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="camp.html">Camp</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need further information, feel free to reach out!</p>
+
+            <div class="contact-details">
+                <p><strong>Email:</strong> <a href="mailto:manalogabb@gmail.com">ballLNB@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+1234567890">+09154474470</a></p>
+                <p><strong>Address:</strong> 123 Basketball Ave, Court City, ST 12345</p>
+            </div>
+
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="additional-content">
+        <h2>Learn More About Our Program</h2>
+        <p>At our basketball camp, we offer a comprehensive training program designed to enhance your skills on the court. Join us to learn from experienced coaches and meet fellow basketball enthusiasts.</p>
+        <p>For more information, check our <a href="camp.html">Camp Page</a> or feel free to reach out using the contact form above!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Basketball Training Camp. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/fb.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/ig.jpg" alt="Instagram"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/twt.jpg" alt="Twitter"></a>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('nav ul');
+
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        const menuItems = document.querySelectorAll('nav ul li a');
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
