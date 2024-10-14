@@ -230,7 +230,7 @@ nav ul li a:hover {
 
 /* Additional Background Image Section */
 .additional-bg {
-    background-image: url('images/court.jpg');
+    background-image: url('court.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -368,7 +368,7 @@ body {
 /* Registration Section */
 .registration-section {
     padding: 50px 20px;
-    background-image: url('images/rbg.jpg');
+    background-image: url('rbg.jpg');
     background-size: cover; 
     background-position: center; 
     position: relative; 
@@ -429,7 +429,7 @@ body {
 .contact-section {
     padding: 40px;
     background-color: #454749; 
-    background-image: url('images/B.jpg'); 
+    background-image: url('B.jpg'); 
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
